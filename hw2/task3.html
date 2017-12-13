@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var login = prompt('Введите ваш логин', '');
+
+		if(login == 'admin') {
+			var password = prompt('Введите ваш пароль', '');
+			alert('Welcome admin');
+		} else if (login == undefined) {
+			alert('Canceled');
+		} else {
+			alert ('Access denied');
+		}
+	</script>
+</body>
+</html>
