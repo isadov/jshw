@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var size = 8; //задает размер доски
+
+		for(var i = 0; i < size; i++)
+		{
+			for(var j = 0; j < size; j++)
+			{
+				if((i+j) % 2 == 0) document.write('#');
+				else document.write('&nbsp');
+			}
+			document.write('<br/>')
+		}
+	</script>
+</body>
+</html>
