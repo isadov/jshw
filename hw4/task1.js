@@ -3,6 +3,7 @@ function fib(n) {
     for(i = 1; i <= n; i++) {
         b = a + (a = b);
         // console.log('Step #' + i + '\na = ' + a + ', b = ' + b );
+        // 123
     }
     return a;
 }
