@@ -1,8 +1,21 @@
+## <a name='task1'>Задание 1 (из класса)<a>
+В объекте есть свойство className, которое содержит список «классов» – слов, разделенных пробелом. 
+Создайте функцию addClass(obj, cls), которая добавляет в список класс cls, но только если его там еще нет. 
+Ваша функция не должна добавлять лишних пробелов.
+```javascript
+var obj = {
+	className: 'open menu'  
+}; 
+addClass(obj, 'new'); // obj.className='open menu new'  addClass(obj, 'open'); // без изменений 
+addClass(obj, 'me'); // obj.className='open menu new me'   
+console.log( obj.className ); // "open menu new me"
+```
+
 ## <a name='task1'>Задание 1 (Удаление css классов)<a>
 У объекта есть свойство className, которое хранит список css класов – слов, разделенных пробелами:
 ```javascript
 var obj = {
-  className: 'open menu'
+	className: 'open menu'
 };
 ```
 Напишите функцию removeClass(obj, cls), которая удаляет класс cls, если он есть:
@@ -13,7 +26,7 @@ removeClass(obj, 'blabla'); // без изменений
 P.S. Дополнительное усложнение. Функция должна корректно обрабатывать дублирование класса в строке:
 ```javascript
 obj = {
-  className: 'my menu menu'
+	className: 'my menu menu'
 };
 
 removeClass(obj, 'menu');
